@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- wallpaper-->
-         <img src="assets/wallpaper.png" id="wallpaper" alt="wallpaper" draggable="false">
+         <img src="assets/wallp.png" id="wallpaper" alt="wallpaper" draggable="false">
         <!-- like lockscreen pseudo-->
          <div id="lock-bgblur"></div>
          <div id="lock-overlay" align="center">
@@ -19,21 +19,122 @@
             <p id="lock-text">Click to unlock</p>
          </div>
 
-         <!-- ABOUTME.txt-->
+         <!-- aboutmeeh-->
 
          <div id="aboutme-icon">
             <div id="aboutme-icon-img" align="center" justify="center">
-                <h2 id="aboutme-icon-emoji">📄</h2>
-                <p id="aboutme-icon-text">ABOUTME.txt</p>
+                <img src="assets/txt.png" alt="ABOUTME.md" id="aboutme-icon-emoji">
+                <p id="aboutme-icon-text">ABOUTME.md</p>
             </div>
          </div>
 
+         <!-- browser -->
+
+         <div id="browser-icon">
+            <div id="browser-icon-img" align="center" justify="center">
+                <img src="assets/browser.png" alt="Browser" id="browser-icon-emoji">
+                <p id="browser-icon-text">Browser</p>
+            </div>
+         </div>
+         <!-- minecraft hehehehe-->
+
+         <div id="minecraft-icon">
+            <div id="minecraft-icon-img" align="center" justify="center">
+                <img src="assets/minecraft.png" alt="Minecraft">
+                <p id="minecraft-icon-text">Minecraft</p>
+            </div>
+         </div>
+
+         <!-- ide   -->
+
+         <div id="ide-icon">
+            <div id="ide-icon-img" align="center" justify="center">
+                <img src="assets/codeide.png" alt="IDE" id="ide-icon-image">
+                <p id="ide-icon-text">Code IDE</p>
+            </div>
+         </div>
          <div id="dock">
             <nav id="dock-nav">
-                <a href="https://github.com/THEbluefirestudios"></a> <!-- placeholders   -->
-                <a href="https://twitter.com/BlueFireStudios">Twitter</a>
-                <a href="https://www.instagram.com/BlueFireStudios">Instagram</a>
+                <a href="https://github.com/THEbluefirestudios"><img src="https://icon.horse/icon/github.com" alt="GitHub" class="dock-icon" title="My GitHub"></a> <!-- placeholders   -->
+                <a href="https://hackclub.enterprise.slack.com/team/U0B8VJ3EYDA"><img src="https://icon.horse/icon/slack.com" alt="Slack" class="dock-icon" title="My Slack"></a>
+                <a href="https://discord.com/users/1198193896786771978"><img src="https://icon.horse/icon/discord.com" alt="Discord" class="dock-icon" title="My Discord"></a>
+                <div id="v-sep"></div>
+                <a href="https://github.com/THEbluefirestudios/hyprtools/releases"><img src="assets/hyprtools.png" alt=" Download HyprTools" class="dock-icon" title="Download HyprTools"></a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/blackhole-new-tab/kgkahleamcfifgmdcjmajceickkamdjd"><img src="assets/blackholent.png" alt=" Download Blackhole New Tab" class="dock-icon" title="Download Blackhole New Tab"></a>
+                <a href="https://f-droid.org/packages/com.bluefirestudios.memeboard/"><img src="assets/memeboard.png" alt=" Download MemeBoard" class="dock-icon" title="Download MemeBoard"></a>
+                <a href="https://modrinth.com/shader/candela-shaders"><img src="assets/candela.png" alt=" Download Candela Shaders" class="dock-icon" title="Download Candela Shaders"></a>
+                <div id="dock-clock">
+                    <span id="dock-time">--:--</span>
+                    <span id="dock-date">---</span>
+                </div>
+                <h6 id="larp"> | </h6>
             </nav>
          </div>
+
+         <div id="aboutme-window" class="window">
+            <div class="window-titlebar" id="aboutme-titlebar">
+                <h2 class="window-title">ABOUTME.md</h2>
+                <button class="window-close" title="Close">&times;</button>
+            </div>
+            <div class="window-content">
+                <h2>Hi!</h2>
+                <hr class="window-hr">
+                <p>Hello! I'm THEbluefirestudios, a 13 year old passionate developer. I am fluent in Python, Java, Webdev(HTML, CSS, JS).</p>
+                <hr class="window-hr">
+                <p>My finished projects are:</p>
+                <ul class="window-ul">
+                    <li>HyprTools - A tool suite for Windows</li>
+                    <li>Blackhole New Tab - A new tab extension for Microsoft Edge</li>
+                    <li>MemeBoard - An open source meme board app for Android</li>
+                    <li>BlueFire Studios Website - My website portfolio, where you are right now!</li>
+                    <li>Candela Shaders - An optimised shader pack for Minecraft </li>
+                </ul>
+                <hr class="window-hr">
+                <p>My WIP projects are:</p>
+                <ul class="window-ul">
+                    <li>Hackly - An LLM wrapper for HackClub AI</li>
+                    <li>Astral Shaders - An even optimised shader pack for Minecraft</li>
+                    <li>Cerium - A linux CLI tool for setting up Minecraft Fabric servers fast</li>
+                </ul>
+                <hr class="window-hr">
+                <p>You can download my projects. or contact me using the shortcuts below!</p>
+            </div>
+        </div>
+
+            <div class="window window3" id="browser-window">
+                <div class="window-titlebar browser-bar">
+                <div class="browser-nav">
+                        <button class="browser-btn" id="go-back" title="Back">&#x2190;</button>
+                        <button class="browser-btn" id="go-forward" title="Forward">&#x2192;</button>
+                        <button class="browser-btn" id="go-reload" title="Reload">&#x21BB;</button>
+                        <button class="browser-btn" id="go-home" title="Home">&#x2302;</button>
+                    </div>
+                    <form class="browser-url" id="url-form">
+                        <input type="text" id="url-input" placeholder="Search or type URL (should begin with https://), some websites may not work due to iframe restrictions" spellcheck="false">
+                    </form>
+                    <button class="window-close" title="Close">&times;</button>
+                </div>
+                <div class="window-content browser">
+                    <iframe id="browser-frame" src="https://www.google.com/webhp?igu=1"></iframe>
+                </div>
+            </div>
+            <div class="window window3" id="minecraft-window">
+              <div class="window-titlebar">
+                <h2 class="window-title">Minecraft</h2>
+                    <button class="window-close" title="Close">&times;</button>
+                </div>
+                <div class="window-content browser">
+                        <iframe src="https://classic.minecraft.net" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+            </div>
+            <div class="window window3" id="ide-window">
+              <div class="window-titlebar">
+                <h2 class="window-title">Code IDE</h2>
+                    <button class="window-close" title="Close">&times;</button>
+                </div>
+                <div class="window-content browser">
+                        <iframe src="https://livecodes.io/" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+            </div>
     </body>
 </html>
