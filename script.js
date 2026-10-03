@@ -82,12 +82,18 @@ icons.forEach(({ icon, window: winId }) => {
 
   iconEl.addEventListener('click', () => {
     winEl.classList.add('open');
+    const mc = winEl.querySelector('#minecraft-frame');
+    if (mc && !mc.getAttribute('src')) mc.src = mc.dataset.src;
   });
 });
 
 document.addEventListener('click', (e) => {
   const btn = e.target.closest('.window-close');
-  if (btn) btn.closest('.window').classList.remove('open');
+  if (!btn) return;
+  const win = btn.closest('.window');
+  win.classList.remove('open');
+  const mc = win.querySelector('#minecraft-frame');
+  if (mc) mc.removeAttribute('src');
 });
 
 function updateClock() {
