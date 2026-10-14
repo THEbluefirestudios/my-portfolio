@@ -4,7 +4,7 @@ A nice Website about me, by me!
 
 ## Description
 
-A simple, and true to me website I made for learning `html` and introducing myself! It has a nice lock-screen, a nice home-screen, inspired by Windows 10, shortcuts on the taskbar for contacting me and for downloading my projects, and a few "apps" which are just `iframes` in a window div that is resizeable and has an pice transparency effect!
+A simple, and true to me website I made for learning `html` and introducing myself! It has a nice lock-screen, a nice home-screen, inspired by Windows 10, shortcuts on the taskbar for contacting me and for downloading my projects, and a few "apps" which are just `iframes` in a window div that is resizeable and has an nice transparency effect!
 
 ### Screenshots
 <img width="1870" height="919" alt="Screenshot 2026-10-03 150801" src="https://github.com/user-attachments/assets/ba574ed0-d49c-47d3-b694-17b1505a0379" />
